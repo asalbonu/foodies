@@ -1,10 +1,5 @@
 <?php
 require_once("config/db.php");
-$query="SELECT * FROM products;";
-$result=mysqli_query($conn,$query);
-$query1="SELECT * FROM products WHERE category='breakfast';";
-$k2=mysqli_query($conn,$query1);
-$k1=mysqli_num_rows($k2);
 ?>
 <?php require_once("parties/header.php");?>
 <div class="inner-banner">
@@ -21,6 +16,8 @@ $k1=mysqli_num_rows($k2);
     <div class="menu-w3ls py-5" id="menu">
         <div class="container py-md-4 py-3">
     <?php require_once("content.php")?>
+    </div>
+    </div>
             <section class="w3l-promocode">
         <div class="promo-block pt-md-0 pt-4">
             <div class="container">
